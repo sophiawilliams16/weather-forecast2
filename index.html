@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Weather Dashboard</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+         <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h2>Weather Dashboard</h2>
+        </header>
+        <main>
+            <section class="row">
+                <div class="row align-items-start"></div>
+                <div class="col-6 col-md-2">
+                    <h4>Search for a City:</h4>
+                    <input type="text" name="city-input" class="city"></input>
+                    <button class="btn btn-primary">Search</button>
+                    <ul class="city-buttons"></ul>
+                </div>
+
+                <div class="col-12 col-md-10">
+                    <div class="current-box">
+                        <h2 class="current-city"> <span class="current-date"></span></h2>
+                        <div>
+                            <p>Temp: <span class="temp"></span> F</p>
+                            <p>Wind: <span class="wind"></span> mph</p>
+                            <p>Humidity: <span class="humidity"></span> %</p>
+                        </div>
+                    </div>
+
+                    <h4>5 Day Forecast:</h4>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="box">
+                                <span class="title-1"></span>
+                                <div>
+                                    <p>Temp: <span class="temp-7"></span> F</p>
+                                    <p>Wind: <span class="wind-7"></span> mph</p>
+                                    <p>Humidity: <span class="humidity-7"></span> %</p>
+                                </div>
+                            </div>
+                       
+                            <div class="box">
+                                <span class="title-2"></span>
+                                <div>
+                                    <p>Temp: <span class="temp-15"></span> F</p>
+                                    <p>Wind: <span class="wind-15"></span> mph</p>
+                                    <p>Humidity: <span class="humidity-15"></span> %</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <span class="title-3"></span>
+                                <div>
+                                    <p>Temp: <span class="temp-23"></span> F</p>
+                                    <p>Wind: <span class="wind-23"></span> mph</p>
+                                    <p>Humidity: <span class="humidity-23"></span> %</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <span class="title-4"></span>
+                                <div>
+                                    <p>Temp: <span class="temp-31"></span> F</p>
+                                    <p>Wind: <span class="wind-31"></span> mph</p>
+                                    <p>Humidity: <span class="humidity-31"></span> %</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <span class="title-5"></span>
+                                <div>
+                                    <p>Temp: <span class="temp-39"></span> F</p>
+                                    <p>Wind: <span class="wind-39"></span> mph</p>
+                                    <p>Humidity: <span class="humidity-39"></span> %</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+            </section>
+        </main>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous"
+        ></script>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+        ></script>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

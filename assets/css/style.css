@@ -1,0 +1,50 @@
+* {
+    background-color: rgb(59, 59, 59);
+    color: lightgray
+}
+
+.current-box {
+    border-radius: .7rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* 5 Day Forecast Cards */
+.container {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.container .box {
+  width: 175px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  border-radius: .7rem;
+  transition: all ease .3s;
+  margin: 2px;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .box .title {
+  font-weight: bold;
+}
+
+.container .box div p {
+  margin: 0;
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+.container .box:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
